@@ -1,0 +1,30 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{%static 'css/mdb.js' %}">
+</head>
+<body>
+    <div class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{%static 'images/dhoni.webp' %}" alt="" height="650px" width="2000px">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/dhoni.webp'%}" alt="" height="650px" width="2000px">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/dhoni.webp' %}" alt="" height="650px" width="2000px">
+            </div>
+        </div>
+    </div>
+    <script type="module" src="{% static 'js/jquery.js' %}"></script>
+    <script type="module" src="{% static 'js/popper.js' %}"></script>
+    <script type="module" src="{% static 'js/bootstrap.js' %}"></script>
+    <script type="module" src="{% static 'js/mdb.js' %}"></script>
+</body>
+</html>
